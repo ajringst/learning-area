@@ -23,21 +23,20 @@
       <ul>
         <li>
           <label for="food">Enter your favorite food:</label>
-            <select name="food" id="food">
-              <optgroup label="mains">
-                <option >Salad</option>
-                <option >Curry</option>
-                <option >Pizza</option>
-                <option >Fajitas</option>
-              </optgroup>
-              <optgroup label="snacks">
+          <input type="text" name="food" id="food" list="foodlist">
+            <datalist id="foodlist">
+              <label for="suggestion"></label>
+              <select name="altfood" id="suggestion">
+                <option>Salad</option>
+                <option>Curry</option>
+                <option>Pizza</option>
+                <option>Fajitas</option>
                 <option>Biscuits</option>
                 <option>Crisps</option>
                 <option>Fruit</option>
                 <option>Breadsticks</option>
-              </optgroup>
-            </select>
-        </li>
+              </select>
+            </datalist>
         <li>
           <button>Submit choice</button>
         </li>
